@@ -3,6 +3,11 @@ Docker Funbox
 
 [Docker](https://docs.docker.com/installation/) container with fun geeky terminal commands and ASCII art.
 
+### Mirror (for archive purposes only)
+
+* Original GitHub Repo: https://github.com/wernight/docker-funbox
+* Original DockerHub Target: https://hub.docker.com/r/wernight/funbox
+
 ### Featuring
 
 In alphabetic order:
