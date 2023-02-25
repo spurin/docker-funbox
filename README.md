@@ -8,6 +8,9 @@ Docker Funbox
 * Original GitHub Repo: https://github.com/wernight/docker-funbox
 * Original DockerHub Target: https://hub.docker.com/r/wernight/funbox
 
+**Links below updated to match, please the use the original resource wherever possible**
+**Full credit on all efforts is to wernight**
+
 ### Featuring
 
 In alphabetic order:
@@ -37,7 +40,7 @@ In alphabetic order:
 
 #### Basic usage
 
-    $ docker run --rm -it wernight/funbox
+    $ docker run --rm -it spurin/funbox
                              _       _     _      ____             _
     __      _____ _ __ _ __ (_) __ _| |__ | |_   / / _|_   _ _ __ | |__   _____  __
     \ \ /\ / / _ \ '__| '_ \| |/ _` | '_ \| __| / / |_| | | | '_ \| '_ \ / _ \ \/ /
@@ -77,29 +80,29 @@ In alphabetic order:
 
 #### Some Examples
 
-    $ docker run --rm -it wernight/funbox nyancat
+    $ docker run --rm -it spurin/funbox nyancat
 
-![Screen-shot showing a nyancat in ASCII art](https://raw.githubusercontent.com/wernight/docker-funbox/master/doc/nyancat.png)
+![Screen-shot showing a nyancat in ASCII art](https://raw.githubusercontent.com/spurin/docker-funbox/master/doc/nyancat.png)
 
-    $ docker run --rm -it wernight/funbox asciiquarium
+    $ docker run --rm -it spurin/funbox asciiquarium
 
-![Screen-shot showing a sharq in an aquarium in ASCII art](https://raw.githubusercontent.com/wernight/docker-funbox/master/doc/asciiquarium.png)
+![Screen-shot showing a sharq in an aquarium in ASCII art](https://raw.githubusercontent.com/spurin/docker-funbox/master/doc/asciiquarium.png)
 
-    $ docker run --rm -it wernight/funbox sh -c "figlet funbox | boxes | toilet --gay -f term"
+    $ docker run --rm -it spurin/funbox sh -c "figlet funbox | boxes | toilet --gay -f term"
 
-![Screen-shot showing a the word funbox in large text using ASCII art](https://raw.githubusercontent.com/wernight/docker-funbox/master/doc/funbox.png)
+![Screen-shot showing a the word funbox in large text using ASCII art](https://raw.githubusercontent.com/spurin/docker-funbox/master/doc/funbox.png)
 
-    $ docker run --rm -it wernight/funbox watch -ct -n1 "date '+%D%n%T' | figlet -k | boxes -a c -s 59 -d cat"
+    $ docker run --rm -it spurin/funbox watch -ct -n1 "date '+%D%n%T' | figlet -k | boxes -a c -s 59 -d cat"
 
-![Screen-shot showing a the current date and time in a frame with a cat on top using ASCII art](https://raw.githubusercontent.com/wernight/docker-funbox/master/doc/time-cat.png)
+![Screen-shot showing a the current date and time in a frame with a cat on top using ASCII art](https://raw.githubusercontent.com/spurin/docker-funbox/master/doc/time-cat.png)
 
-    $ docker run --rm -it wernight/funbox cvlc --no-audio -V caca /examples/countdown.mp4
+    $ docker run --rm -it spurin/funbox cvlc --no-audio -V caca /examples/countdown.mp4
 
-![Screen-shot showing number 3 in 3-D using ASCII art](https://raw.githubusercontent.com/wernight/docker-funbox/master/doc/countdown-video.png)
+![Screen-shot showing number 3 in 3-D using ASCII art](https://raw.githubusercontent.com/spurin/docker-funbox/master/doc/countdown-video.png)
 
 You can also watch YouTube videos from the console thanks to the `youtube` alias (using `youtube-dl`, `vlc` and `caca-utils`) then use [cvlc keyboard shortcuts](https://openclipart.org/download/171818/keyboard-mappings-cvlc.svg):
 
-    $ docker run --rm -it wernight/funbox youtube 'https://www.youtube.com/watch?v=bMljuVqqmVU'
+    $ docker run --rm -it spurin/funbox youtube 'https://www.youtube.com/watch?v=bMljuVqqmVU'
 
 
 #### Security and mounting volumes
@@ -108,12 +111,12 @@ For security, all tools run as non-root user with uid `666`. So to access mounte
 
   * Make them readable by everyone `chmod o+rx`
   * make them readable by uid/gid `666`
-  * Run as another user: `docker run --rm -it --user $UID wernight/funbox ...`
+  * Run as another user: `docker run --rm -it --user $UID spurin/funbox ...`
 
 Example:
 
     $ chown 666 my-image.png
-    $ docker run --rm -it -v $PWD/my-image.png:/my-image.png:ro wernight/funbox metapixel /my-image.png
+    $ docker run --rm -it -v $PWD/my-image.png:/my-image.png:ro spurin/funbox metapixel /my-image.png
 
 
 ### See also
