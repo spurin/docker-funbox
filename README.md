@@ -9,6 +9,7 @@ Docker Funbox
 * Original DockerHub Target: https://hub.docker.com/r/wernight/funbox
 
 **Links below updated to match, please the use the original resource wherever possible**
+
 **Full credit on all efforts is to wernight**
 
 ### Featuring
