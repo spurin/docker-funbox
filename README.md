@@ -8,6 +8,12 @@ Docker Funbox
 * Original GitHub Repo: https://github.com/wernight/docker-funbox
 * Original DockerHub Target: https://hub.docker.com/r/wernight/funbox
 
+### Changes
+
+* Updated base image to use debian
+* Cross compiled to support arm and other architectures
+* Switched youtube-dl to yt-dlp and added ffmpeg
+
 **Links below updated to match, please the use the original resource wherever possible**
 
 **Full credit on all efforts is to wernight**
